@@ -17,7 +17,11 @@
       display: block;
 
     }
-
+.container{
+  text-align: center;
+vertical-align: middle;
+line-height: 50px;
+}
 #home{
 
 background-position:center;
@@ -144,11 +148,12 @@ top: 0px;
   color: white;
   padding: top right bottom left;
 }
+
     </style>
 
      <section id="home">
        <div class="container">
-        <header >
+        <header>
           <div class="logo">
             <img src="images/logo//logo.png" alt="logo" />
             </div>
@@ -186,38 +191,33 @@ top: 0px;
 
     <section>
         <div class="container">
+                <h3>WHAT WE DO</h3>
           <div class="row">
             <div class="col-4 col-12-narrow">
               <section>
-                  <img src="images/services/design.png" alt="">
+                  <img src="images/services/design.png" class="timg" alt="">
                 <header>
                 <p>DESIGN</p>
                 </header>
-                <p>Paragraph
-                <br>on <br>
-                  design</p>
+                  <p style="display: none">design branch</p>
               </section>
             </div>
             <div class="col-4 col-12-narrow">
               <section>
-                <img src="images/services/dev.png" alt="">
+                <img src="images/services/dev.png" class="timg" alt="">
                 <header>
                 <p>DEVELOPMENT</p>
                 </header>
-                <p>Paragraph
-                <br>on <br>
-                  developments</p>
+                <p style="display: none">development branch</p>
               </section>
             </div>
             <div class="col-4 col-12-narrow">
               <section>
-                <img src="images/services/product.png" alt="">
+                <img src="images/services/product.png" class="timg" alt="">
                 <header>
                   <p>PRODUCT MANAGEMENT</p>
                 </header>
-                <p>Paragraph
-                <br>on <br>
-                  product management</p>
+                <p style="display: none">product management branch</p>
               </section>
             </div>
           </div>
@@ -345,10 +345,10 @@ top: 0px;
 <script type="text/javascript">
 
 $(document).ready(function(){
-  $(".col-4 col-12-narrow").click(function(){
-    $("p").toggle();
+  var flip = 0;
+  $( ".timg" ).click(function() {
+    $( "p" ).toggle( flip++ % 2 === 0 );
   });
-});
 
 $('#contact-form').bootstrapValidator({
 //        live: 'disabled',
