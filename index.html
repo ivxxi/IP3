@@ -3,11 +3,150 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body>
 
-    <section id="home">
+
+    <style media="screen">
+
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+      text-align: center;
+      display: block;
+
+    }
+
+#home{
+
+background-position:center;
+background-repeat:no-repeat;
+background:url("images/background/image1.jpg");
+background-size: cover;
+min-height: 80%;
+}
+
+#services{
+  background-position:center;
+  background-repeat:no-repeat;
+background:url("images/background/image2.jpg");
+min-height: 50%;
+}
+
+#contact{
+  background-position:center;
+  background-repeat:no-repeat;
+background:url("images/background/image3.jpg");
+min-height: 70%;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  width: auto;
+  height: auto;
+  float: none;
+  padding: 22.5px 0px 0px 0px; /*to make it exactly to the center*/
+  }
+}
+
+
+.mouse{
+  width: 100px;
+  height: 100px;
+  width: auto;
+  height: auto;
+  float: none;
+  padding: 22.5px 0px 0px 0px; /*to make it exactly to the center*/
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.social-icons {
+  text-align: center;
+  }
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:70px;
+  height:70px;
+  margin-right: 20px;
+}
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.col-md-3:hover .image {
+  opacity: 0.3;
+}
+
+.col-md-3:hover .middle {
+  opacity: 1;
+}
+
+.project {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.contact-form{ margin-top:15px;}
+.contact-form .textarea{ min-height:220px; resize:none;}
+.form-control{ box-shadow:none; border-color:#eee; height:49px;}
+.form-control:focus{ box-shadow:none; border-color:#00b09c;}
+.form-control-feedback{ line-height:50px;}
+.main-btn{ background:#00b09c; border-color:#00b09c; color:#fff;}
+.main-btn:hover{ background:#00a491;color:#fff;}
+.form-control-feedback {
+line-height: 50px;
+top: 0px;
+}
+
+#home{
+  color: white;
+  padding: top right bottom left;
+}
+#services{
+  color: white;
+  padding: top right bottom left;
+}
+
+#contact{
+  color: white;
+  padding: top right bottom left;
+}
+    </style>
+
+     <section id="home">
        <div class="container">
         <header >
           <div class="logo">
@@ -200,24 +339,71 @@
                 </form>
 	</div>
     </section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $(".col-4 col-12-narrow").click(function(){
+    $("p").toggle();
+  });
+});
+
+$('#contact-form').bootstrapValidator({
+//        live: 'disabled',
+      message: 'This value is not valid',
+      feedbackIcons: {
+          valid: 'glyphicon glyphicon-ok',
+          invalid: 'glyphicon glyphicon-remove',
+          validating: 'glyphicon glyphicon-refresh'
+      },
+      fields: {
+          Name: {
+              validators: {
+                  notEmpty: {
+                      message: 'The Name is required and cannot be empty'
+                  }
+              }
+          },
+          email: {
+              validators: {
+                  notEmpty: {
+                      message: 'The email address is required'
+                  },
+                  emailAddress: {
+                      message: 'The email address is not valid'
+                  }
+              }
+          },
+          Message: {
+              validators: {
+                  notEmpty: {
+                      message: 'The Message is required and cannot be empty'
+                  }
+              }
+          }
+      }
+  });
+</script>
+
     <section id="footer">
 
-  <ul class="social-icons">
-      <li><a href="http://www.behance.com"><img src="images/social/behance.png"></a></li>
-      <li><a href="http://www.dribble.com"><img src="images/social/dribble.png"/></a></li>
-      <li><a href="http://www.facebook.com"><img src="images/social/facebook.png" /></a></li>
-      <li><a href="http://www.flickr.com"><img src="images/social/flickr.png" /></a></li>
-      <li><a href="https://www.stumbleupon.com/"><img src="images/social/g_plus.png" /></a></li>
-      <li><a href="http://www.pinterest.com"><img src="images/social/pinterest.png" /></a></li>
-      <li><a href="http://www.skype.com"><img src="images/social/skype.png" /></a></li>
-      <li><a href="http://www.stumble.com"><img src="images/social/stumble_upon.png" /></a></li>
-      <li><a href="http://www.twitter.com"><img src="images/social/twitter.png" /></a></li>
-      <li><a href="http://www.youtube.com"><img src="images/social/you_tube.png" /></a></li>
-  </ul>
-    <div class="copyright">
-        DELANI STUDIO <br>2019
-    </div>
-  </section>
-
+    <ul class="social-icons">
+        <li><a href="http://www.behance.com"><img src="images/social/behance.png"></a></li>
+        <li><a href="http://www.dribble.com"><img src="images/social/dribble.png"/></a></li>
+        <li><a href="http://www.facebook.com"><img src="images/social/facebook.png" /></a></li>
+        <li><a href="http://www.flickr.com"><img src="images/social/flickr.png" /></a></li>
+        <li><a href="https://www.stumbleupon.com/"><img src="images/social/g_plus.png" /></a></li>
+        <li><a href="http://www.pinterest.com"><img src="images/social/pinterest.png" /></a></li>
+        <li><a href="http://www.skype.com"><img src="images/social/skype.png" /></a></li>
+        <li><a href="http://www.stumble.com"><img src="images/social/stumble_upon.png" /></a></li>
+        <li><a href="http://www.twitter.com"><img src="images/social/twitter.png" /></a></li>
+        <li><a href="http://www.youtube.com"><img src="images/social/you_tube.png" /></a></li>
+    </ul>
+      <div class="copyright">
+          DELANI STUDIO <br>2019
+      </div>
+    </section>
   </body>
 </html>
