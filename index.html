@@ -1,409 +1,235 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delani Studio</title>
+</head>
+<body>
+    <div class="intro">
+        <img src="images/logo/logo.png">
+        <h2>WELCOME</h2>
+        <h2>TO DELANI STUDIO</h2>
+        <h6>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN DEVELOPMEMT</h6>
+        <img src="images/logo/mouse.png">
+    </div>
 
+    <div class="about">
+        <h3>About us</h3>
+            <p>
+                When you work with us you are part of a team of committed collaborators.
+                All aspects of our software development process are integrated,interactive and agile.
+                <br>
+                Our approach unfies design, development and product management to create exceptional products.
+                <br>
+                We start each project by understandind our business goals.
+                <br>
+                Then we help translate them into effective and elegant solution.
+            </p>
+    </div>
 
-    <style media="screen">
+    <div class="services">
+        <h2>Services</h2>
+            <p>
+                Before we sign a contract or write a line of code our team will spend the neccessary time needed
+                to understand our product vision.
+                <br>
+                The outcome of this scoping session is proposal on high-level statement of work.
+                <br>
+                Based on your requirements we can provide compelete offering or just pieces you need.
+        </p>
+    </div>
 
-    body, html {
-      height: 100%;
-      font-family: "Inconsolata", sans-serif;
-      text-align: center;
-      display: block;
+    <div class="what">
+        <h3>WHAT WE DO</h3>
+    </div>
 
-    }
-.container{
-  text-align: center;
-vertical-align: middle;
-line-height: 50px;
-}
-#home{
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="design">
+                    <img src="images/services/design.png">
+                    <h5>DESIGN</h5>
+                </div>
 
-background-position:center;
-background-repeat:no-repeat;
-background:url("images/background/image1.jpg");
-background-size: cover;
-min-height: 80%;
-}
-
-#services{
-  background-position:center;
-  background-repeat:no-repeat;
-background:url("images/background/image2.jpg");
-min-height: 50%;
-}
-
-#contact{
-  background-position:center;
-  background-repeat:no-repeat;
-background:url("images/background/image3.jpg");
-min-height: 70%;
-}
-
-.logo{
-  width: 100px;
-  height: 100px;
-  width: auto;
-  height: auto;
-  float: none;
-  padding: 22.5px 0px 0px 0px; /*to make it exactly to the center*/
-  }
-}
-
-
-.mouse{
-  width: 100px;
-  height: 100px;
-  width: auto;
-  height: auto;
-  float: none;
-  padding: 22.5px 0px 0px 0px; /*to make it exactly to the center*/
-}
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-.social-icons {
-  text-align: center;
-  }
-.social-icons li {
-  display:inline-block;
-  list-style-type:none;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  }
-.social-icons li a {
-  border-bottom: none;
-  }
-.social-icons li img {
-  width:70px;
-  height:70px;
-  margin-right: 20px;
-}
-
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.col-md-3:hover .image {
-  opacity: 0.3;
-}
-
-.col-md-3:hover .middle {
-  opacity: 1;
-}
-
-.project {
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.contact-form{ margin-top:15px;}
-.contact-form .textarea{ min-height:220px; resize:none;}
-.form-control{ box-shadow:none; border-color:#eee; height:49px;}
-.form-control:focus{ box-shadow:none; border-color:#00b09c;}
-.form-control-feedback{ line-height:50px;}
-.main-btn{ background:#00b09c; border-color:#00b09c; color:#fff;}
-.main-btn:hover{ background:#00a491;color:#fff;}
-.form-control-feedback {
-line-height: 50px;
-top: 0px;
-}
-
-#home{
-  color: white;
-  padding: top right bottom left;
-}
-#services{
-  color: white;
-  padding: top right bottom left;
-}
-
-#contact{
-  color: white;
-  padding: top right bottom left;
-}
-
-    </style>
-
-     <section id="home">
-       <div class="container">
-        <header>
-          <div class="logo">
-            <img src="images/logo//logo.png" alt="logo" />
+                <div id="d-content">
+                    <h5><b>DESIGN</b></h5>
+                    <p>
+                      Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.
+                      <br> Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.
+                    </p>
+                </div>
             </div>
-            <h3>WELCOME <br>TO DELANI STUDIO</h3>
-            <h5>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</h5>
-          </div>
-        </header>
-        <footer class="mouse">
-            <img src="images/logo//mouse.png" alt="logo" />
-        </footer>
-           </div>
-    </section>
 
-    <section id="first" class="main">
-      <header>
-        <div class="container">
-          <h3>ABOUT US</h3>
-          <p>When you work with us, you are part of a team of committed collaborators. All aspects of our software development are intergrated interactive <br>and agile.
-            <br>Our approach unifies design, development and product management to create exceptional products. <br> We start each project by understanding your business goals, the user's needs and the product requirements <br>
-            Then we help translate them into effective and elegant solutions</p>
+
+            <div class="col-sm-4">
+                <div id="development">
+                    <img src="images/services/dev.png">
+                    <h5>DEVELOPMENT</h5>
+                </div>
+                <div id="de-content">
+                    <h5><b>DEVELOPMENT</b></h5>
+                    <p>
+                      All engineers are fluent in the latest enterprise, mobile and web development technologies. <br> They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div id="product">
+                <img src="images/services/product.png">
+                <h5>PRODUCT MANAGEMENT</h5>
+                </div>
+                <div id="p-content">
+                    <h5><b>PRODUCT MANAGEMENT</b></h5>
+                    <p>
+                      Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. <br> This iterative process allows for changes as business requirements evolve.
+                    </p>
+                </div>
+            </div>
         </div>
-      </header>
-      </section>
+    </div>
 
-      <section id="services">
-        <div class="container">
-        <h5>SERVICES</h5>
-        <p>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision <br>
-          The outcome of this scoping session is proposal or high-level statement of work <br>
-          based on your requirements, we can provide acomplete offering or just the pieces you need.</p>
-          </div>
-      </section>
-
-
-
-    <section>
-        <div class="container">
-                <h3>WHAT WE DO</h3>
-          <div class="row">
-            <div class="col-4 col-12-narrow">
-              <section>
-                  <img src="images/services/design.png" class="timg" alt="">
-                <header>
-                <p>DESIGN</p>
-                </header>
-                  <p style="display: none">design branch</p>
-              </section>
-            </div>
-            <div class="col-4 col-12-narrow">
-              <section>
-                <img src="images/services/dev.png" class="timg" alt="">
-                <header>
-                <p>DEVELOPMENT</p>
-                </header>
-                <p style="display: none">development branch</p>
-              </section>
-            </div>
-            <div class="col-4 col-12-narrow">
-              <section>
-                <img src="images/services/product.png" class="timg" alt="">
-                <header>
-                  <p>PRODUCT MANAGEMENT</p>
-                </header>
-                <p style="display: none">product management branch</p>
-              </section>
-            </div>
-          </div>
+      <section >
+        <div class="container" id="portfolio">
+          <h3>PORTFOLIO</h3>
+          <!-- Portfolio Gallery Grid -->
+  <div class="row">
+  <div class="col-md-3">
+      <div class="content">
+        <img src="images/portfolio/work1.jpg"  class="image" style="width:100%">
+        <div class="middle">
+          <div class="project">project</div>
         </div>
-      </section>
-
-
-    <section >
-      <div class="container" id="portfolio">
-        <h3>portfolio</h3>
-        <!-- Portfolio Gallery Grid -->
-<div class="row">
-<div class="col-md-3">
-    <div class="content">
-      <img src="images/portfolio/work1.jpg"  class="image" style="width:100%">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="content">
+      <img src="images/portfolio/work2.jpg"  class="image"  style="width:100%">
       <div class="middle">
         <div class="project">project</div>
       </div>
+      </div>
     </div>
-  </div>
-  <div class="col-md-3">
-    <div class="content">
-    <img src="images/portfolio/work2.jpg"  class="image"  style="width:100%">
-    <div class="middle">
-      <div class="project">project</div>
-    </div>
-    </div>
-  </div>
 
 
-  <div class="col-md-3">
-    <div class="content">
-    <img src="images/portfolio/work3.jpg"  class="image"  style="width:100%">
-    <div class="middle">
-      <div class="project">project</div>
-    </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="content">
-    <img src="images/portfolio/work4.jpg"  class="image"  style="width:100%">
-    <div class="middle">
-      <div class="project">project</div>
-    </div>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-<div class="row">
-<div class="col-md-3">
-    <div class="content">
-      <img src="images/portfolio/work5.jpg"  class="image"  style="width:100%">
+    <div class="col-md-3">
+      <div class="content">
+      <img src="images/portfolio/work3.jpg"  class="image"  style="width:100%">
       <div class="middle">
         <div class="project">project</div>
       </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="content">
-    <img src="images/portfolio/work6.jpg"  class="image"  style="width:100%">
-    <div class="middle">
-      <div class="project">project</div>
-    </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="content">
-    <img src="images/portfolio/work7.jpg"  class="image" style="width:100%">
-    <div class="middle">
-      <div class="project">project</div>
-    </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="content">
-    <img src="images/portfolio/work8.jpg"  class="image" style="width:100%">
-    <div class="middle">
-      <div class="project">project</div>
-    </div>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
       </div>
-    </section>
-
-    <section id="contact">
-
-      <div class="container">
-        <header>
-            <h2>contact us</h2>
-        </header>
-	<div class="row">
-		<form role="form" id="contact-form" class="contact-form">
-                    <div class="row">
-                		<div class="col-md-6">
-                  		<div class="form-group">
-                            <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
-                  		</div>
-                  	</div>
-                    	<div class="col-md-6">
-                  		<div class="form-group">
-                            <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
-                  		</div>
-                  	</div>
-                  	</div>
-                  	<div class="row">
-                  		<div class="col-md-12">
-                  		<div class="form-group">
-                            <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
-                  		</div>
-                  	</div>
-                    </div>
-                    <div class="row">
-                    <div class="col-md-12">
-                  <button type="submit" class="btn main-btn pull-right">Send a message</button>
-                  </div>
-                  </div>
-                </form>
-	</div>
-    </section>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-<script type="text/javascript">
-
-$(document).ready(function(){
-  var flip = 0;
-  $( ".timg" ).click(function() {
-    $( "p" ).toggle( flip++ % 2 === 0 );
-  });
-
-$('#contact-form').bootstrapValidator({
-//        live: 'disabled',
-      message: 'This value is not valid',
-      feedbackIcons: {
-          valid: 'glyphicon glyphicon-ok',
-          invalid: 'glyphicon glyphicon-remove',
-          validating: 'glyphicon glyphicon-refresh'
-      },
-      fields: {
-          Name: {
-              validators: {
-                  notEmpty: {
-                      message: 'The Name is required and cannot be empty'
-                  }
-              }
-          },
-          email: {
-              validators: {
-                  notEmpty: {
-                      message: 'The email address is required'
-                  },
-                  emailAddress: {
-                      message: 'The email address is not valid'
-                  }
-              }
-          },
-          Message: {
-              validators: {
-                  notEmpty: {
-                      message: 'The Message is required and cannot be empty'
-                  }
-              }
-          }
-      }
-  });
-</script>
-
-    <section id="footer">
-
-    <ul class="social-icons">
-        <li><a href="http://www.behance.com"><img src="images/social/behance.png"></a></li>
-        <li><a href="http://www.dribble.com"><img src="images/social/dribble.png"/></a></li>
-        <li><a href="http://www.facebook.com"><img src="images/social/facebook.png" /></a></li>
-        <li><a href="http://www.flickr.com"><img src="images/social/flickr.png" /></a></li>
-        <li><a href="https://www.stumbleupon.com/"><img src="images/social/g_plus.png" /></a></li>
-        <li><a href="http://www.pinterest.com"><img src="images/social/pinterest.png" /></a></li>
-        <li><a href="http://www.skype.com"><img src="images/social/skype.png" /></a></li>
-        <li><a href="http://www.stumble.com"><img src="images/social/stumble_upon.png" /></a></li>
-        <li><a href="http://www.twitter.com"><img src="images/social/twitter.png" /></a></li>
-        <li><a href="http://www.youtube.com"><img src="images/social/you_tube.png" /></a></li>
-    </ul>
-      <div class="copyright">
-          DELANI STUDIO <br>2019
+    </div>
+    <div class="col-md-3">
+      <div class="content">
+      <img src="images/portfolio/work4.jpg"  class="image"  style="width:100%">
+      <div class="middle">
+        <div class="project">project</div>
       </div>
-    </section>
-  </body>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+      <div class="content">
+        <img src="images/portfolio/work5.jpg"  class="image"  style="width:100%">
+        <div class="middle">
+          <div class="project">project</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="content">
+      <img src="images/portfolio/work6.jpg"  class="image"  style="width:100%">
+      <div class="middle">
+        <div class="project">project</div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="content">
+      <img src="images/portfolio/work7.jpg"  class="image" style="width:100%">
+      <div class="middle">
+        <div class="project">project</div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="content">
+      <img src="images/portfolio/work8.jpg"  class="image" style="width:100%">
+      <div class="middle">
+        <div class="project">project</div>
+      </div>
+      </div>
+    </div>
+  </div>
+        </div>
+
+      <div class="form">
+        <div class="palace">
+          <header>
+              <h2>contact us</h2>
+          </header>
+
+           <form id="contact-form"  name="cForm" onsubmit="validation()" method="POST">
+             <div class="row">
+             <div class="col-md-6">
+               <div class="form-group">
+                <input class="form-control" id="name" type="text" placeholder="Name"name="fname" required>
+              </div>
+            </div>
+
+              <div class="col-md-6">
+              <div class="form-group">
+                  <input  class="form-control"  id="email" type="email" placeholder="Email" name="fmail" required>
+              </div>
+              </div>
+            </div>
+
+
+              <label for="ftext"></label>
+              <div class="row">
+                <div class="col-md-12">
+                <div class="form-group">
+              <textarea class="form-control"  id="text" rows="10"  cols="100" placeholder="Your message here..."></textarea>
+            </div>
+          </div>
+
+              <div class="row">
+              <div class="col-md-12">
+            <button type="submit"  class="btn btn-danger" value="SUBMIT">Send a message</button>
+            </div>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+
+          <section id="footer">
+          <ul class="social-icons">
+              <li><a href="http://www.behance.com"><img src="images/social/behance.png"></a></li>
+              <li><a href="http://www.dribble.com"><img src="images/social/dribble.png"/></a></li>
+              <li><a href="http://www.facebook.com"><img src="images/social/facebook.png" /></a></li>
+              <li><a href="http://www.flickr.com"><img src="images/social/flickr.png" /></a></li>
+              <li><a href="https://www.stumbleupon.com/"><img src="images/social/g_plus.png" /></a></li>
+              <li><a href="http://www.pinterest.com"><img src="images/social/pinterest.png" /></a></li>
+              <li><a href="http://www.skype.com"><img src="images/social/skype.png" /></a></li>
+              <li><a href="http://www.stumble.com"><img src="images/social/stumble_upon.png" /></a></li>
+              <li><a href="http://www.twitter.com"><img src="images/social/twitter.png" /></a></li>
+              <li><a href="http://www.youtube.com"><img src="images/social/you_tube.png" /></a></li>
+          </ul>
+
+        <div class="foot">
+            DELANI STUDIO<br>2020
+        </div>
+
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
