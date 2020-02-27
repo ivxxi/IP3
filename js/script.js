@@ -38,5 +38,5 @@ function validation(){
     var name=document.getElementById("name").value;
     var email=document.getElementById("mail").value;
 
-      confirm( name +" "+ "we have received your message.Thank you for reaching out to us");
+      confirm( name +" "+ "We have received your message.Thank you for reaching out to us");
 }
